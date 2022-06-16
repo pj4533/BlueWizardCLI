@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A360BDD285B6B1C003DBCAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BDC285B6B1C003DBCAA /* main.swift */; };
+		0A360BE5285B6BC8003DBCAA /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0A360BE4285B6BC8003DBCAA /* ArgumentParser */; };
+		0A360C32285B6E05003DBCAA /* Segmenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BE9285B6E05003DBCAA /* Segmenter.m */; };
+		0A360C34285B6E05003DBCAA /* Buffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BEC285B6E05003DBCAA /* Buffer.m */; };
+		0A360C35285B6E05003DBCAA /* FrameDataBinaryEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF1285B6E05003DBCAA /* FrameDataBinaryEncoder.m */; };
+		0A360C36285B6E05003DBCAA /* FrameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF2285B6E05003DBCAA /* FrameData.m */; };
+		0A360C37285B6E05003DBCAA /* NibbleSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF3285B6E05003DBCAA /* NibbleSwitcher.m */; };
+		0A360C38285B6E05003DBCAA /* PitchEstimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF4285B6E05003DBCAA /* PitchEstimator.m */; };
+		0A360C39285B6E05003DBCAA /* TimeMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF8285B6E05003DBCAA /* TimeMachine.m */; };
+		0A360C3A285B6E05003DBCAA /* NibbleBitReverser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BF9285B6E05003DBCAA /* NibbleBitReverser.m */; };
+		0A360C3B285B6E05003DBCAA /* HexFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BFA285B6E05003DBCAA /* HexFormatter.m */; };
+		0A360C3C285B6E05003DBCAA /* BitPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BFB285B6E05003DBCAA /* BitPacker.m */; };
+		0A360C3D285B6E05003DBCAA /* BitHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360BFE285B6E05003DBCAA /* BitHelpers.m */; };
+		0A360C3F285B6E05003DBCAA /* HexConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C03285B6E05003DBCAA /* HexConverter.m */; };
+		0A360C40285B6E05003DBCAA /* PreEmphasizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C04285B6E05003DBCAA /* PreEmphasizer.m */; };
+		0A360C41285B6E05003DBCAA /* SpeechSynthesizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C08285B6E05003DBCAA /* SpeechSynthesizer.mm */; };
+		0A360C42285B6E05003DBCAA /* Reflector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C09285B6E05003DBCAA /* Reflector.m */; };
+		0A360C43285B6E05003DBCAA /* Input.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C0C285B6E05003DBCAA /* Input.m */; };
+		0A360C44285B6E05003DBCAA /* WaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C0E285B6E05003DBCAA /* WaveformView.m */; };
+		0A360C45285B6E05003DBCAA /* RMSNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C10285B6E05003DBCAA /* RMSNormalizer.m */; };
+		0A360C46285B6E05003DBCAA /* HammingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C13285B6E05003DBCAA /* HammingWindow.m */; };
+		0A360C47285B6E05003DBCAA /* Autocorrelator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C14285B6E05003DBCAA /* Autocorrelator.m */; };
+		0A360C48285B6E05003DBCAA /* Sampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C15285B6E05003DBCAA /* Sampler.m */; };
+		0A360C49285B6E05003DBCAA /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C17285B6E05003DBCAA /* Processor.m */; };
+		0A360C4A285B6E05003DBCAA /* tms5110r.inc in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C1C285B6E05003DBCAA /* tms5110r.inc */; };
+		0A360C4B285B6E05003DBCAA /* tms5220.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C1F285B6E05003DBCAA /* tms5220.cpp */; };
+		0A360C4C285B6E05003DBCAA /* Filterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C22285B6E05003DBCAA /* Filterer.m */; };
+		0A360C4D285B6E05003DBCAA /* HexByteBinaryEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C23285B6E05003DBCAA /* HexByteBinaryEncoder.m */; };
+		0A360C4E285B6E05003DBCAA /* CodingTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C24285B6E05003DBCAA /* CodingTable.m */; };
+		0A360C4F285B6E05003DBCAA /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C29285B6E05003DBCAA /* UserSettings.m */; };
+		0A360C50285B6E05003DBCAA /* SpeechDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C2A285B6E05003DBCAA /* SpeechDataReader.m */; };
+		0A360C51285B6E05003DBCAA /* Output.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C2B285B6E05003DBCAA /* Output.m */; };
+		0A360C52285B6E05003DBCAA /* ClosestValueFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C30285B6E05003DBCAA /* ClosestValueFinder.m */; };
+		0A360C53285B6E05003DBCAA /* PlayheadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C31285B6E05003DBCAA /* PlayheadView.m */; };
+		0A360C56285B7848003DBCAA /* BlueWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A360C55285B7848003DBCAA /* BlueWizard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A360BD7285B6B1C003DBCAA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A360BD9285B6B1C003DBCAA /* BlueWizardCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlueWizardCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A360BDC285B6B1C003DBCAA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A360BE7285B6E05003DBCAA /* Autocorrelator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Autocorrelator.h; sourceTree = "<group>"; };
+		0A360BE8285B6E05003DBCAA /* HammingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HammingWindow.h; sourceTree = "<group>"; };
+		0A360BE9285B6E05003DBCAA /* Segmenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Segmenter.m; sourceTree = "<group>"; };
+		0A360BEA285B6E05003DBCAA /* RMSNormalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSNormalizer.h; sourceTree = "<group>"; };
+		0A360BEC285B6E05003DBCAA /* Buffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Buffer.m; sourceTree = "<group>"; };
+		0A360BED285B6E05003DBCAA /* WaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveformView.h; sourceTree = "<group>"; };
+		0A360BEE285B6E05003DBCAA /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		0A360BEF285B6E05003DBCAA /* Reflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflector.h; sourceTree = "<group>"; };
+		0A360BF0285B6E05003DBCAA /* Filterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filterer.h; sourceTree = "<group>"; };
+		0A360BF1285B6E05003DBCAA /* FrameDataBinaryEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataBinaryEncoder.m; sourceTree = "<group>"; };
+		0A360BF2285B6E05003DBCAA /* FrameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameData.m; sourceTree = "<group>"; };
+		0A360BF3285B6E05003DBCAA /* NibbleSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibbleSwitcher.m; sourceTree = "<group>"; };
+		0A360BF4285B6E05003DBCAA /* PitchEstimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PitchEstimator.m; sourceTree = "<group>"; };
+		0A360BF5285B6E05003DBCAA /* SamplerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplerDelegate.h; sourceTree = "<group>"; };
+		0A360BF6285B6E05003DBCAA /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		0A360BF7285B6E05003DBCAA /* Sampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sampler.h; sourceTree = "<group>"; };
+		0A360BF8285B6E05003DBCAA /* TimeMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeMachine.m; sourceTree = "<group>"; };
+		0A360BF9285B6E05003DBCAA /* NibbleBitReverser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibbleBitReverser.m; sourceTree = "<group>"; };
+		0A360BFA285B6E05003DBCAA /* HexFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexFormatter.m; sourceTree = "<group>"; };
+		0A360BFB285B6E05003DBCAA /* BitPacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitPacker.m; sourceTree = "<group>"; };
+		0A360BFC285B6E05003DBCAA /* NotificationNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationNames.h; sourceTree = "<group>"; };
+		0A360BFD285B6E05003DBCAA /* CodingTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodingTable.h; sourceTree = "<group>"; };
+		0A360BFE285B6E05003DBCAA /* BitHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitHelpers.m; sourceTree = "<group>"; };
+		0A360BFF285B6E05003DBCAA /* HexByteBinaryEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexByteBinaryEncoder.h; sourceTree = "<group>"; };
+		0A360C00285B6E05003DBCAA /* PlayheadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayheadView.h; sourceTree = "<group>"; };
+		0A360C01285B6E05003DBCAA /* ClosestValueFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClosestValueFinder.h; sourceTree = "<group>"; };
+		0A360C03285B6E05003DBCAA /* HexConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexConverter.m; sourceTree = "<group>"; };
+		0A360C04285B6E05003DBCAA /* PreEmphasizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreEmphasizer.m; sourceTree = "<group>"; };
+		0A360C05285B6E05003DBCAA /* SpeechDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechDataReader.h; sourceTree = "<group>"; };
+		0A360C06285B6E05003DBCAA /* Output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Output.h; sourceTree = "<group>"; };
+		0A360C07285B6E05003DBCAA /* UserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettings.h; sourceTree = "<group>"; };
+		0A360C08285B6E05003DBCAA /* SpeechSynthesizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpeechSynthesizer.mm; sourceTree = "<group>"; };
+		0A360C09285B6E05003DBCAA /* Reflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reflector.m; sourceTree = "<group>"; };
+		0A360C0A285B6E05003DBCAA /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		0A360C0B285B6E05003DBCAA /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		0A360C0C285B6E05003DBCAA /* Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input.m; sourceTree = "<group>"; };
+		0A360C0E285B6E05003DBCAA /* WaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveformView.m; sourceTree = "<group>"; };
+		0A360C0F285B6E05003DBCAA /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		0A360C10285B6E05003DBCAA /* RMSNormalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSNormalizer.m; sourceTree = "<group>"; };
+		0A360C11285B6E05003DBCAA /* AudioHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHelpers.h; sourceTree = "<group>"; };
+		0A360C12285B6E05003DBCAA /* Segmenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segmenter.h; sourceTree = "<group>"; };
+		0A360C13285B6E05003DBCAA /* HammingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HammingWindow.m; sourceTree = "<group>"; };
+		0A360C14285B6E05003DBCAA /* Autocorrelator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Autocorrelator.m; sourceTree = "<group>"; };
+		0A360C15285B6E05003DBCAA /* Sampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sampler.m; sourceTree = "<group>"; };
+		0A360C16285B6E05003DBCAA /* TimeMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeMachine.h; sourceTree = "<group>"; };
+		0A360C17285B6E05003DBCAA /* Processor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Processor.m; sourceTree = "<group>"; };
+		0A360C18285B6E05003DBCAA /* PitchEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitchEstimator.h; sourceTree = "<group>"; };
+		0A360C19285B6E05003DBCAA /* NibbleSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibbleSwitcher.h; sourceTree = "<group>"; };
+		0A360C1C285B6E05003DBCAA /* tms5110r.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = tms5110r.inc; sourceTree = "<group>"; };
+		0A360C1D285B6E05003DBCAA /* tms5220.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tms5220.h; sourceTree = "<group>"; };
+		0A360C1E285B6E05003DBCAA /* tms5220.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tms5220.txt; sourceTree = "<group>"; };
+		0A360C1F285B6E05003DBCAA /* tms5220.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tms5220.cpp; sourceTree = "<group>"; };
+		0A360C20285B6E05003DBCAA /* FrameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameData.h; sourceTree = "<group>"; };
+		0A360C21285B6E05003DBCAA /* FrameDataBinaryEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataBinaryEncoder.h; sourceTree = "<group>"; };
+		0A360C22285B6E05003DBCAA /* Filterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filterer.m; sourceTree = "<group>"; };
+		0A360C23285B6E05003DBCAA /* HexByteBinaryEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexByteBinaryEncoder.m; sourceTree = "<group>"; };
+		0A360C24285B6E05003DBCAA /* CodingTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodingTable.m; sourceTree = "<group>"; };
+		0A360C25285B6E05003DBCAA /* BitHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitHelpers.h; sourceTree = "<group>"; };
+		0A360C26285B6E05003DBCAA /* BitPacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitPacker.h; sourceTree = "<group>"; };
+		0A360C27285B6E05003DBCAA /* HexFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexFormatter.h; sourceTree = "<group>"; };
+		0A360C28285B6E05003DBCAA /* NibbleBitReverser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibbleBitReverser.h; sourceTree = "<group>"; };
+		0A360C29285B6E05003DBCAA /* UserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettings.m; sourceTree = "<group>"; };
+		0A360C2A285B6E05003DBCAA /* SpeechDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechDataReader.m; sourceTree = "<group>"; };
+		0A360C2B285B6E05003DBCAA /* Output.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Output.m; sourceTree = "<group>"; };
+		0A360C2C285B6E05003DBCAA /* PreEmphasizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreEmphasizer.h; sourceTree = "<group>"; };
+		0A360C2D285B6E05003DBCAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A360C2E285B6E05003DBCAA /* HexConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexConverter.h; sourceTree = "<group>"; };
+		0A360C30285B6E05003DBCAA /* ClosestValueFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClosestValueFinder.m; sourceTree = "<group>"; };
+		0A360C31285B6E05003DBCAA /* PlayheadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayheadView.m; sourceTree = "<group>"; };
+		0A360C54285B7114003DBCAA /* BlueWizardCLI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueWizardCLI-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A360C55285B7848003DBCAA /* BlueWizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueWizard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A360BD6285B6B1C003DBCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A360BE5285B6BC8003DBCAA /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A360BD0285B6B1C003DBCAA = {
+			isa = PBXGroup;
+			children = (
+				0A360BDB285B6B1C003DBCAA /* BlueWizardCLI */,
+				0A360BDA285B6B1C003DBCAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A360BDA285B6B1C003DBCAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A360BD9285B6B1C003DBCAA /* BlueWizardCLI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A360BDB285B6B1C003DBCAA /* BlueWizardCLI */ = {
+			isa = PBXGroup;
+			children = (
+				0A360BE6285B6E05003DBCAA /* Classes */,
+				0A360BDC285B6B1C003DBCAA /* main.swift */,
+				0A360C54285B7114003DBCAA /* BlueWizardCLI-Bridging-Header.h */,
+				0A360C55285B7848003DBCAA /* BlueWizard.swift */,
+			);
+			path = BlueWizardCLI;
+			sourceTree = "<group>";
+		};
+		0A360BE6285B6E05003DBCAA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A360BE7285B6E05003DBCAA /* Autocorrelator.h */,
+				0A360BE8285B6E05003DBCAA /* HammingWindow.h */,
+				0A360BE9285B6E05003DBCAA /* Segmenter.m */,
+				0A360BEA285B6E05003DBCAA /* RMSNormalizer.h */,
+				0A360BEC285B6E05003DBCAA /* Buffer.m */,
+				0A360BED285B6E05003DBCAA /* WaveformView.h */,
+				0A360BEE285B6E05003DBCAA /* Input.h */,
+				0A360BEF285B6E05003DBCAA /* Reflector.h */,
+				0A360BF0285B6E05003DBCAA /* Filterer.h */,
+				0A360BF1285B6E05003DBCAA /* FrameDataBinaryEncoder.m */,
+				0A360BF2285B6E05003DBCAA /* FrameData.m */,
+				0A360BF3285B6E05003DBCAA /* NibbleSwitcher.m */,
+				0A360BF4285B6E05003DBCAA /* PitchEstimator.m */,
+				0A360BF5285B6E05003DBCAA /* SamplerDelegate.h */,
+				0A360BF6285B6E05003DBCAA /* Processor.h */,
+				0A360BF7285B6E05003DBCAA /* Sampler.h */,
+				0A360BF8285B6E05003DBCAA /* TimeMachine.m */,
+				0A360BF9285B6E05003DBCAA /* NibbleBitReverser.m */,
+				0A360BFA285B6E05003DBCAA /* HexFormatter.m */,
+				0A360BFB285B6E05003DBCAA /* BitPacker.m */,
+				0A360BFC285B6E05003DBCAA /* NotificationNames.h */,
+				0A360BFD285B6E05003DBCAA /* CodingTable.h */,
+				0A360BFE285B6E05003DBCAA /* BitHelpers.m */,
+				0A360BFF285B6E05003DBCAA /* HexByteBinaryEncoder.h */,
+				0A360C00285B6E05003DBCAA /* PlayheadView.h */,
+				0A360C01285B6E05003DBCAA /* ClosestValueFinder.h */,
+				0A360C03285B6E05003DBCAA /* HexConverter.m */,
+				0A360C04285B6E05003DBCAA /* PreEmphasizer.m */,
+				0A360C05285B6E05003DBCAA /* SpeechDataReader.h */,
+				0A360C06285B6E05003DBCAA /* Output.h */,
+				0A360C07285B6E05003DBCAA /* UserSettings.h */,
+				0A360C08285B6E05003DBCAA /* SpeechSynthesizer.mm */,
+				0A360C09285B6E05003DBCAA /* Reflector.m */,
+				0A360C0A285B6E05003DBCAA /* Credits.rtf */,
+				0A360C0B285B6E05003DBCAA /* SpeechSynthesizer.h */,
+				0A360C0C285B6E05003DBCAA /* Input.m */,
+				0A360C0E285B6E05003DBCAA /* WaveformView.m */,
+				0A360C0F285B6E05003DBCAA /* Buffer.h */,
+				0A360C10285B6E05003DBCAA /* RMSNormalizer.m */,
+				0A360C11285B6E05003DBCAA /* AudioHelpers.h */,
+				0A360C12285B6E05003DBCAA /* Segmenter.h */,
+				0A360C13285B6E05003DBCAA /* HammingWindow.m */,
+				0A360C14285B6E05003DBCAA /* Autocorrelator.m */,
+				0A360C15285B6E05003DBCAA /* Sampler.m */,
+				0A360C16285B6E05003DBCAA /* TimeMachine.h */,
+				0A360C17285B6E05003DBCAA /* Processor.m */,
+				0A360C18285B6E05003DBCAA /* PitchEstimator.h */,
+				0A360C19285B6E05003DBCAA /* NibbleSwitcher.h */,
+				0A360C1A285B6E05003DBCAA /* lib */,
+				0A360C20285B6E05003DBCAA /* FrameData.h */,
+				0A360C21285B6E05003DBCAA /* FrameDataBinaryEncoder.h */,
+				0A360C22285B6E05003DBCAA /* Filterer.m */,
+				0A360C23285B6E05003DBCAA /* HexByteBinaryEncoder.m */,
+				0A360C24285B6E05003DBCAA /* CodingTable.m */,
+				0A360C25285B6E05003DBCAA /* BitHelpers.h */,
+				0A360C26285B6E05003DBCAA /* BitPacker.h */,
+				0A360C27285B6E05003DBCAA /* HexFormatter.h */,
+				0A360C28285B6E05003DBCAA /* NibbleBitReverser.h */,
+				0A360C29285B6E05003DBCAA /* UserSettings.m */,
+				0A360C2A285B6E05003DBCAA /* SpeechDataReader.m */,
+				0A360C2B285B6E05003DBCAA /* Output.m */,
+				0A360C2C285B6E05003DBCAA /* PreEmphasizer.h */,
+				0A360C2D285B6E05003DBCAA /* Info.plist */,
+				0A360C2E285B6E05003DBCAA /* HexConverter.h */,
+				0A360C30285B6E05003DBCAA /* ClosestValueFinder.m */,
+				0A360C31285B6E05003DBCAA /* PlayheadView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0A360C1A285B6E05003DBCAA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0A360C1B285B6E05003DBCAA /* TMS5220 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0A360C1B285B6E05003DBCAA /* TMS5220 */ = {
+			isa = PBXGroup;
+			children = (
+				0A360C1C285B6E05003DBCAA /* tms5110r.inc */,
+				0A360C1D285B6E05003DBCAA /* tms5220.h */,
+				0A360C1E285B6E05003DBCAA /* tms5220.txt */,
+				0A360C1F285B6E05003DBCAA /* tms5220.cpp */,
+			);
+			path = TMS5220;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A360BD8285B6B1C003DBCAA /* BlueWizardCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A360BE0285B6B1C003DBCAA /* Build configuration list for PBXNativeTarget "BlueWizardCLI" */;
+			buildPhases = (
+				0A360BD5285B6B1C003DBCAA /* Sources */,
+				0A360BD6285B6B1C003DBCAA /* Frameworks */,
+				0A360BD7285B6B1C003DBCAA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueWizardCLI;
+			packageProductDependencies = (
+				0A360BE4285B6BC8003DBCAA /* ArgumentParser */,
+			);
+			productName = BlueWizardCLI;
+			productReference = 0A360BD9285B6B1C003DBCAA /* BlueWizardCLI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A360BD1285B6B1C003DBCAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0A360BD8285B6B1C003DBCAA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A360BD4285B6B1C003DBCAA /* Build configuration list for PBXProject "BlueWizardCLI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A360BD0285B6B1C003DBCAA;
+			packageReferences = (
+				0A360BE3285B6BC7003DBCAA /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 0A360BDA285B6B1C003DBCAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A360BD8285B6B1C003DBCAA /* BlueWizardCLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A360BD5285B6B1C003DBCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A360C48285B6E05003DBCAA /* Sampler.m in Sources */,
+				0A360C4F285B6E05003DBCAA /* UserSettings.m in Sources */,
+				0A360C45285B6E05003DBCAA /* RMSNormalizer.m in Sources */,
+				0A360C35285B6E05003DBCAA /* FrameDataBinaryEncoder.m in Sources */,
+				0A360C56285B7848003DBCAA /* BlueWizard.swift in Sources */,
+				0A360C3F285B6E05003DBCAA /* HexConverter.m in Sources */,
+				0A360C39285B6E05003DBCAA /* TimeMachine.m in Sources */,
+				0A360C4C285B6E05003DBCAA /* Filterer.m in Sources */,
+				0A360C49285B6E05003DBCAA /* Processor.m in Sources */,
+				0A360C37285B6E05003DBCAA /* NibbleSwitcher.m in Sources */,
+				0A360C4D285B6E05003DBCAA /* HexByteBinaryEncoder.m in Sources */,
+				0A360C4E285B6E05003DBCAA /* CodingTable.m in Sources */,
+				0A360C51285B6E05003DBCAA /* Output.m in Sources */,
+				0A360C47285B6E05003DBCAA /* Autocorrelator.m in Sources */,
+				0A360C32285B6E05003DBCAA /* Segmenter.m in Sources */,
+				0A360C38285B6E05003DBCAA /* PitchEstimator.m in Sources */,
+				0A360C4B285B6E05003DBCAA /* tms5220.cpp in Sources */,
+				0A360C3B285B6E05003DBCAA /* HexFormatter.m in Sources */,
+				0A360C34285B6E05003DBCAA /* Buffer.m in Sources */,
+				0A360C50285B6E05003DBCAA /* SpeechDataReader.m in Sources */,
+				0A360C40285B6E05003DBCAA /* PreEmphasizer.m in Sources */,
+				0A360C46285B6E05003DBCAA /* HammingWindow.m in Sources */,
+				0A360C43285B6E05003DBCAA /* Input.m in Sources */,
+				0A360C42285B6E05003DBCAA /* Reflector.m in Sources */,
+				0A360C36285B6E05003DBCAA /* FrameData.m in Sources */,
+				0A360BDD285B6B1C003DBCAA /* main.swift in Sources */,
+				0A360C4A285B6E05003DBCAA /* tms5110r.inc in Sources */,
+				0A360C41285B6E05003DBCAA /* SpeechSynthesizer.mm in Sources */,
+				0A360C44285B6E05003DBCAA /* WaveformView.m in Sources */,
+				0A360C53285B6E05003DBCAA /* PlayheadView.m in Sources */,
+				0A360C3A285B6E05003DBCAA /* NibbleBitReverser.m in Sources */,
+				0A360C52285B6E05003DBCAA /* ClosestValueFinder.m in Sources */,
+				0A360C3D285B6E05003DBCAA /* BitHelpers.m in Sources */,
+				0A360C3C285B6E05003DBCAA /* BitPacker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A360BDE285B6B1C003DBCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueWizardCLI/BlueWizardCLI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A360BDF285B6B1C003DBCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueWizardCLI/BlueWizardCLI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0A360BE1285B6B1C003DBCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5UVS9V6KW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A360BE2285B6B1C003DBCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5UVS9V6KW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A360BD4285B6B1C003DBCAA /* Build configuration list for PBXProject "BlueWizardCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A360BDE285B6B1C003DBCAA /* Debug */,
+				0A360BDF285B6B1C003DBCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A360BE0285B6B1C003DBCAA /* Build configuration list for PBXNativeTarget "BlueWizardCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A360BE1285B6B1C003DBCAA /* Debug */,
+				0A360BE2285B6B1C003DBCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A360BE3285B6BC7003DBCAA /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A360BE4285B6BC8003DBCAA /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A360BE3285B6BC7003DBCAA /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A360BD1285B6B1C003DBCAA /* Project object */;
+}
